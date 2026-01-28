@@ -1,35 +1,83 @@
-import { Coffee } from 'lucide-react';
+import { motion } from "framer-motion";
+import heroBg from "../Images/matcha.jpg";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-64 h-64 bg-green-600 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-600 rounded-full blur-3xl"></div>
-      </div>
+    <section
+      className="relative min-h-screen w-full flex items-center justify-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${heroBg})` }}
+    >
+      {/* Dark + blur overlay */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <div className="mb-8 flex justify-center">
-          <div className="bg-green-600 p-6 rounded-full shadow-lg">
-            <Coffee className="w-16 h-16 text-white" />
-          </div>
-        </div>
+      {/* Content */}
+      <motion.div
+        className="relative z-10 text-center px-6 max-w-3xl mx-auto"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0, y: 30 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 0.9,
+              ease: "easeOut",
+              staggerChildren: 0.15,
+            },
+          },
+        }}
+      >
+        {/* Title */}
+        <motion.h1
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="text-4xl md:text-6xl font-semibold text-green-100"
+        >
+          Matcha 10:36
+        </motion.h1>
 
-        <h1 className="text-6xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight">
-          Pure Matcha
-          <span className="block text-green-600 mt-2">Experience</span>
-        </h1>
+        {/* Subtitle */}
+        <motion.h2
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="mt-3 text-3xl md:text-5xl font-bold text-green-500"
+        >
+          Yearn for matcha
+        </motion.h2>
 
-        <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto font-light leading-relaxed">
-          Traditional Japanese matcha, crafted with care, served wherever you are
-        </p>
+        {/* Tagline */}
+        <motion.p
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="mt-4 text-sm md:text-base text-gray-300"
+        >
+          One Matcha at a time!!
+        </motion.p>
 
-        <div className="mt-12 flex justify-center gap-4">
-          <div className="h-1 w-16 bg-green-600 rounded"></div>
-          <div className="h-1 w-8 bg-green-400 rounded"></div>
-          <div className="h-1 w-4 bg-green-300 rounded"></div>
-        </div>
-      </div>
+        {/* Buttons */}
+        <motion.div
+          variants={{
+            hidden: { opacity: 0, y: 20 },
+            visible: { opacity: 1, y: 0 },
+          }}
+          className="mt-8 flex justify-center gap-4"
+        >
+          <button className="px-6 py-2 rounded-md bg-green-600 text-white font-medium hover:bg-green-700 transition">
+            Find Us →
+          </button>
+
+          <button className="px-6 py-2 rounded-md bg-black/60 text-white font-medium border border-white/20 hover:bg-black/80 transition">
+            View Menu
+          </button>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }
