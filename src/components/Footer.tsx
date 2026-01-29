@@ -4,7 +4,9 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="font-display text-xl font-semibold text-foreground">
-            <span className="text-primary">Matcha 10:36</span>
+           <a href="#hero" className="hover:text-primary transition-colors">
+             <span className="text-primary">Matcha 10:36</span>
+           </a>
           </div>
           
           <nav className="flex gap-6 text-sm text-muted-foreground">

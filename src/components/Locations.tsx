@@ -16,13 +16,13 @@ const Locations = () => {
     <section id="locations" className="py-24 bg-primary text-primary-foreground">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-medium tracking-widest uppercase text-primary-foreground/80 mb-4 block">
+          <span className="text-sm font-medium tracking-widest uppercase text-secondary-foreground/80 mb-4 block">
             Find Us
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold">
             Pop-up <span className="italic">Locations</span>
           </h2>
-          <p className="mt-4 text-primary-foreground/80 max-w-lg mx-auto">
+          <p className="mt-4 text-secondary-foreground/80 max-w-lg mx-auto">
             We bring the matcha to you. Follow us on Instagram for real-time updates.
           </p>
         </div>
@@ -33,7 +33,7 @@ const Locations = () => {
               key={index}
               className={`rounded-2xl p-6 transition-all duration-300 ${
                 location.upcoming
-                  ? "bg-primary-foreground/10 backdrop-blur-sm hover:bg-primary-foreground/20"
+                  ? "bg-primary-foreground/30 backdrop-blur-sm hover:bg-primary-foreground/20"
                   : "bg-primary-foreground/5 opacity-70"
               }`}
             >
@@ -46,7 +46,7 @@ const Locations = () => {
                 )}
               </div>
               
-              <div className="space-y-2 text-sm text-primary-foreground/80">
+              <div className="space-y-2 text-sm text-secondary-foreground/80">
                 <div className="flex items-center gap-2">
                   <MapPin size={16} />
                   <span>{location.address}</span>
@@ -69,8 +69,11 @@ const Locations = () => {
             variant="outline" 
             size="lg"
             className="border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+             onClick={() => {
+              document.getElementById("menu")?.scrollIntoView({behavior: "smooth",})
+             } }
           >
-            View Full Schedule
+            View Menu
           </Button>
         </div>
       </div>
