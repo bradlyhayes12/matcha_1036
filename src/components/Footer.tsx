@@ -8,9 +8,9 @@ const Footer = () => {
           </div>
           
           <nav className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#DrinksMenu" className="hover:text-foreground transition-colors">Menu</a>
+            <a href="#menu" className="hover:text-foreground transition-colors">Menu</a>
             <a href="#locations" className="hover:text-foreground transition-colors">Pop-ups</a>
-            <a href="#ContactForm" className="hover:text-foreground transition-colors">Contact</a>
+            <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
           </nav>
           
           <p className="text-sm text-muted-foreground">

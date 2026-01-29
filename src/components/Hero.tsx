@@ -31,22 +31,19 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in opacity-0" style={{ animationDelay: "0.8s" }}>
-            <Button variant="hero" size="xl">
+            <Button variant="hero" size="xl" onClick={() => {
+              document.getElementById("locations")?.scrollIntoView({behavior: "smooth",})
+            }}>
               View Pop-up Locations
             </Button>
-            <Button variant="heroOutline" size="xl">
+            <Button variant="heroOutline" size="xl" onClick={() => {
+              document.getElementById("menu")?.scrollIntoView({behavior: "smooth",})
+            }}>
               Explore Menu
             </Button>
           </div>
         </div>
       </div>
-
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-        <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-2.5 bg-primary rounded-full animate-bounce" />
-        </div>
-      </div>
-      
     </section>
   );
 }
