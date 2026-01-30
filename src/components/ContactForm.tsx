@@ -1,5 +1,6 @@
 import { Instagram, Mail, MessageCircle } from "lucide-react";
 import { Button } from "./ui/button";
+import { IconBrandLinktree, IconBrandTiktok } from "@tabler/icons-react";
 
 const Contact = () => {
   return (
@@ -18,11 +19,11 @@ const Contact = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="xl" className="gap-2">
+            <Button variant="hero" size="xl" className="gap-2" onClick={() => window.open("mailto:hello@matcha.1036.com", "_blank")}>
               <Mail size={20} />
               Email Us
             </Button>
-            <Button variant="heroOutline" size="xl" className="gap-2">
+            <Button variant="heroOutline" size="xl" className="gap-2" onClick={() => window.open("https://www.instagram.com/matcha.1036/", "_blank")}>
               <Instagram size={20} />
               Follow @matcha.1036
             </Button>
@@ -31,9 +32,9 @@ const Contact = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-6">
             {[
-              { icon: Instagram, label: "Instagram", href: "https://www.instagram.com/matcha.1036?utm_source=ig_web_button_share_sheet&igsh=MW80b3JkdXlwYWg3Nw%3D%3D" },
-              { icon: MessageCircle, label: "TikTok", href: "#" },
-              { icon: Mail, label: "Email", href: "#" },
+              { icon: IconBrandTiktok, label: "TikTok", href: "https://www.tiktok.com/@matcha.1036" },
+              { icon: MessageCircle, label: "Message", href: "https://docs.google.com/forms/d/e/1FAIpQLSe-k7hfbT0tdZ-rHRINVgXJbmRfcXm7QfQQq6ur1I7rIigsGg/viewform" },
+              { icon: IconBrandLinktree, label: "Linktree", href: "https://linktr.ee/matcha1036?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnVdeKY4UO0ctcYPkaZ2nVOQfwn5txniqJj6MawX--I5KC0M8NbCP3lg6dPcY_aem_o_UJKWvqqaMqR2Qlfgn1Xw" },
             ].map((social, index) => (
               <a
                 key={index}
