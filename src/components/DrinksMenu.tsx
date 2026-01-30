@@ -1,7 +1,7 @@
-import regMatcha from '../images/regmatcha.jpg'
-import stbMatcha from '../images/stb-matcha.jpg'
-import mangoMatcha from '../images/mango-sticky-rice.jpg'
-import ubeMatcha from '../images/ube.jpg'
+import regMatcha from '../Images/regmatcha.jpg'
+import stbMatcha from '../Images/stb-matcha.jpg'
+import mangoMatcha from '../Images/mango-sticky-rice.jpg'
+import ubeMatcha from '../Images/ube.jpg'
 
 const drinks = [
   {
