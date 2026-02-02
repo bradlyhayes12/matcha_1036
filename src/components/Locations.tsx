@@ -13,16 +13,16 @@ const locations = [
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-24 bg-primary text-primary-foreground">
+    <section id="locations" className="py-24 text-foreground" style={{ backgroundColor: '#CBED3' }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-medium tracking-widest uppercase text-secondary-foreground/80 mb-4 block">
+          <span className="text-sm font-medium tracking-widest uppercase text-gray-600 mb-4 block">
             Find Us
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold">
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
             Pop-up <span className="italic">Locations</span>
           </h2>
-          <p className="mt-4 text-secondary-foreground/80 max-w-lg mx-auto">
+          <p className="mt-4 text-gray-600 max-w-lg mx-auto">
             We bring the matcha to you. Follow us on Instagram for real-time updates.
           </p>
         </div>
@@ -33,20 +33,20 @@ const Locations = () => {
               key={index}
               className={`rounded-2xl p-6 transition-all duration-300 ${
                 location.upcoming
-                  ? "bg-primary-foreground/30 backdrop-blur-sm hover:bg-primary-foreground/20"
-                  : "bg-primary-foreground/5 opacity-70"
+                  ? "bg-white/50 backdrop-blur-sm hover:bg-white/40"
+                  : "bg-white/20 opacity-70"
               }`}
             >
               <div className="flex items-start justify-between mb-4">
-                <h3 className="font-display text-xl font-semibold">{location.name}</h3>
+                <h3 className="font-display text-xl font-semibold text-foreground">{location.name}</h3>
                 {location.upcoming && (
-                  <span className="text-xs font-medium bg-accent text-accent-foreground px-3 py-1 rounded-full">
+                  <span className="text-xs font-medium text-white px-3 py-1 rounded-full" style={{ backgroundColor: '#8ba49a' }}>
                     Upcoming
                   </span>
                 )}
               </div>
-              
-              <div className="space-y-2 text-sm text-secondary-foreground/80">
+
+              <div className="space-y-2 text-sm text-gray-700">
                 <div className="flex items-center gap-2">
                   <MapPin size={16} />
                   <span>{location.address}</span>
@@ -65,16 +65,27 @@ const Locations = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button 
-            variant="outline" 
+          <button
             size="lg"
-            className="border-primary-foreground/50 text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-             onClick={() => {
+            className="px-8 py-4 rounded-lg font-semibold transition-colors text-white"
+            style={{
+              backgroundColor: '#8ba49a',
+              border: '2px solid #8ba49a'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(139, 164, 154, 0.1)';
+              e.currentTarget.style.color = '#8ba49a';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = '#8ba49a';
+              e.currentTarget.style.color = 'white';
+            }}
+            onClick={() => {
               document.getElementById("menu")?.scrollIntoView({behavior: "smooth",})
-             } }
+            }}
           >
             View Menu
-          </Button>
+          </button>
         </div>
       </div>
     </section>
