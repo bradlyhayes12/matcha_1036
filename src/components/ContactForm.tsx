@@ -7,11 +7,11 @@ const Contact = () => {
     <section id="contact" className="py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#8ba49a' }}>
+          <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#D4A574' }}>
             Get in Touch
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
-            Let's <span className="italic" style={{ color: '#8ba49a' }}>Connect</span>
+            Let's <span className="italic" style={{ color: '#D4A574' }}>Connect</span>
           </h2>
           <p className="text-muted-foreground mb-12">
             Interested in having us at your event, market, or space? 
@@ -40,10 +40,10 @@ const Contact = () => {
                 key={index}
                 href={social.href}
                 className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground transition-colors"
-                style={{ '--hover-color': '#8ba49a' } as React.CSSProperties & { '--hover-color': string }}
+                style={{ '--hover-color': '#D4A574' } as React.CSSProperties & { '--hover-color': string }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.color = '#8ba49a';
-                  (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(139, 164, 154, 0.1)';
+                  (e.currentTarget as HTMLElement).style.color = '#D4A574';
+                  (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(212, 165, 116, 0.1)';
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.color = 'var(--tw-text-opacity)';

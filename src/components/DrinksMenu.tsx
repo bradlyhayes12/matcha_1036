@@ -43,11 +43,11 @@ export default function DrinksMenu() {
       <section id="menu" className="py-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#8ba49a' }}>
+          <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#D4A574' }}>
             The Menu
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
-            Our <span className="italic" style={{ color: '#8ba49a' }}>Creations</span>
+            Our <span className="italic" style={{ color: '#D4A574' }}>Creations</span>
           </h2>
         </div>
 
@@ -63,7 +63,7 @@ export default function DrinksMenu() {
                   alt={drink.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <span className="absolute top-4 left-4 text-white text-xs font-medium px-3 py-1 rounded-full" style={{ backgroundColor: '#8ba49a' }}>
+                <span className="absolute top-4 left-4 text-white text-xs font-medium px-3 py-1 rounded-full" style={{ backgroundColor: '#D4A574' }}>
                   {drink.tag}
                 </span>
               </div>
@@ -72,7 +72,7 @@ export default function DrinksMenu() {
                   <h3 className="font-display text-xl font-semibold text-foreground">
                     {drink.name}
                   </h3>
-                  <span className="font-semibold" style={{ color: '#8ba49a' }}>{drink.price}</span>
+                  <span className="font-semibold" style={{ color: '#D4A574' }}>{drink.price}</span>
                 </div>
                 <p className="text-sm text-muted-foreground">{drink.description}</p>
               </div>

@@ -13,16 +13,16 @@ const locations = [
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-24 text-foreground" style={{ backgroundColor: '#CBED3' }}>
+    <section id="locations" className="py-24 text-foreground" style={{ backgroundColor: '#A8B9A0' }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-medium tracking-widest uppercase text-gray-600 mb-4 block">
+          <span className="text-sm font-medium tracking-widest uppercase text-gray-700 mb-4 block">
             Find Us
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
+          <h2 className="font-display text-4xl md:text-5xl font-semibold text-gray-900">
             Pop-up <span className="italic">Locations</span>
           </h2>
-          <p className="mt-4 text-gray-600 max-w-lg mx-auto">
+          <p className="mt-4 text-gray-700 max-w-lg mx-auto">
             We bring the matcha to you. Follow us on Instagram for real-time updates.
           </p>
         </div>
@@ -33,20 +33,20 @@ const Locations = () => {
               key={index}
               className={`rounded-2xl p-6 transition-all duration-300 ${
                 location.upcoming
-                  ? "bg-white/50 backdrop-blur-sm hover:bg-white/40"
+                  ? "bg-white/40 backdrop-blur-sm hover:bg-white/50"
                   : "bg-white/20 opacity-70"
               }`}
             >
               <div className="flex items-start justify-between mb-4">
-                <h3 className="font-display text-xl font-semibold text-foreground">{location.name}</h3>
+                <h3 className="font-display text-xl font-semibold text-gray-900">{location.name}</h3>
                 {location.upcoming && (
-                  <span className="text-xs font-medium text-white px-3 py-1 rounded-full" style={{ backgroundColor: '#8ba49a' }}>
+                  <span className="text-xs font-medium text-white px-3 py-1 rounded-full" style={{ backgroundColor: '#D4A574' }}>
                     Upcoming
                   </span>
                 )}
               </div>
 
-              <div className="space-y-2 text-sm text-gray-700">
+              <div className="space-y-2 text-sm text-gray-800">
                 <div className="flex items-center gap-2">
                   <MapPin size={16} />
                   <span>{location.address}</span>
@@ -69,15 +69,15 @@ const Locations = () => {
             size="lg"
             className="px-8 py-4 rounded-lg font-semibold transition-colors text-white"
             style={{
-              backgroundColor: '#8ba49a',
-              border: '2px solid #8ba49a'
+              backgroundColor: '#D4A574',
+              border: '2px solid #D4A574'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(139, 164, 154, 0.1)';
-              e.currentTarget.style.color = '#8ba49a';
+              e.currentTarget.style.backgroundColor = 'rgba(212, 165, 116, 0.1)';
+              e.currentTarget.style.color = '#D4A574';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#8ba49a';
+              e.currentTarget.style.backgroundColor = '#D4A574';
               e.currentTarget.style.color = 'white';
             }}
             onClick={() => {
