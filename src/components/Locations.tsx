@@ -40,7 +40,7 @@ const Locations = () => {
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-display text-xl font-semibold text-[#E8D5C4]">{location.name}</h3>
                 {location.upcoming && (
-                  <span className="text-xs font-medium text-white px-3 py-1 rounded-full" style={{ backgroundColor: '#558a7f' }}>
+                  <span className="text-xs font-medium text-[#3d5a4f] px-3 py-1 rounded-full" style={{ backgroundColor: '#D4A574' }}>
                     Upcoming
                   </span>
                 )}
@@ -69,16 +69,16 @@ const Locations = () => {
             size="lg"
             className="px-8 py-4 rounded-lg font-semibold transition-colors"
             style={{
-              backgroundColor: '#558a7f',
+              backgroundColor: '#D4A574',
               color: 'white',
-              border: '2px solid #558a7f'
+              border: '2px solid #D4A574'
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(85, 138, 127, 0.15)';
-              e.currentTarget.style.color = '#558a7f';
+              e.currentTarget.style.backgroundColor = 'rgba(212, 165, 116, 0.15)';
+              e.currentTarget.style.color = '#D4A574';
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#558a7f';
+              e.currentTarget.style.backgroundColor = '#D4A574';
               e.currentTarget.style.color = 'white';
             }}
             onClick={() => {

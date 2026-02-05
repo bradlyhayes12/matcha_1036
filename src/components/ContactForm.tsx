@@ -39,11 +39,14 @@ const Contact = () => {
               <a
                 key={index}
                 href={social.href}
-                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-black transition-colors"
+                className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center text-muted-foreground transition-colors"
+                style={{ '--hover-color': '#D4A574' } as React.CSSProperties & { '--hover-color': string }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
+                  (e.currentTarget as HTMLElement).style.color = '#D4A574';
+                  (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(212, 165, 116, 0.1)';
                 }}
                 onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.color = 'var(--tw-text-opacity)';
                   (e.currentTarget as HTMLElement).style.backgroundColor = '';
                 }}
                 aria-label={social.label}
