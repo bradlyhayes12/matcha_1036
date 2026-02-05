@@ -4,64 +4,64 @@
 
 @layer base {
   :root {
-    /* Warm dark green palette */
-    --background: 150 18% 20%;
-    --foreground: 45 30% 92%;
+    /* Matcha dark green palette */
+    --background: 140 30% 18%;
+    --foreground: 40 35% 90%;
 
-    --card: 150 18% 24%;
-    --card-foreground: 45 30% 92%;
+    --card: 140 28% 22%;
+    --card-foreground: 40 35% 90%;
 
-    --popover: 150 18% 20%;
-    --popover-foreground: 45 30% 92%;
+    --popover: 140 30% 18%;
+    --popover-foreground: 40 35% 90%;
 
-    /* Warm light green accent */
-    --primary: 140 28% 65%;
-    --primary-foreground: 150 18% 20%;
+    /* Light green accent */
+    --primary: 140 35% 60%;
+    --primary-foreground: 140 30% 18%;
 
     /* Warm cream */
-    --secondary: 35 40% 88%;
-    --secondary-foreground: 150 18% 20%;
+    --secondary: 40 35% 88%;
+    --secondary-foreground: 140 30% 18%;
 
-    --muted: 150 15% 35%;
-    --muted-foreground: 45 20% 70%;
+    --muted: 140 20% 35%;
+    --muted-foreground: 40 25% 75%;
 
     /* Warm gold accent */
-    --accent: 35 55% 62%;
-    --accent-foreground: 150 18% 20%;
+    --accent: 35 70% 58%;
+    --accent-foreground: 140 30% 18%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 150 15% 30%;
-    --input: 150 15% 30%;
-    --ring: 140 28% 65%;
+    --border: 140 20% 28%;
+    --input: 140 20% 28%;
+    --ring: 140 35% 60%;
 
     --radius: 0.75rem;
 
     /* Custom properties */
-    --matcha-light: 140 28% 65%;
-    --matcha-deep: 150 20% 18%;
-    --cream: 35 40% 88%;
+    --matcha-light: 140 35% 60%;
+    --matcha-deep: 140 30% 16%;
+    --cream: 40 35% 90%;
     --terracotta: 25 50% 50%;
-    --sage: 140 20% 40%;
+    --sage: 140 25% 35%;
 
     /* Gradients */
-    --gradient-matcha: linear-gradient(135deg, hsl(150 18% 22%) 0%, hsl(150 20% 16%) 100%);
-    --gradient-cream: linear-gradient(180deg, hsl(35 40% 88%) 0%, hsl(35 35% 84%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(150 18% 22%) 0%, hsl(140 25% 30%) 50%, hsl(150 18% 22%) 100%);
+    --gradient-matcha: linear-gradient(135deg, hsl(140 30% 20%) 0%, hsl(140 35% 14%) 100%);
+    --gradient-cream: linear-gradient(180deg, hsl(40 35% 90%) 0%, hsl(40 30% 85%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(140 30% 20%) 0%, hsl(140 32% 26%) 50%, hsl(140 30% 20%) 100%);
 
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(150 20% 8% / 0.3);
-    --shadow-elevated: 0 12px 40px -8px hsl(150 20% 8% / 0.4);
+    --shadow-soft: 0 4px 20px -4px hsl(140 20% 8% / 0.4);
+    --shadow-elevated: 0 12px 40px -8px hsl(140 20% 8% / 0.5);
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 140 30% 22%;
+    --sidebar-foreground: 40 35% 90%;
+    --sidebar-primary: 140 35% 60%;
+    --sidebar-primary-foreground: 140 30% 18%;
+    --sidebar-accent: 140 20% 30%;
+    --sidebar-accent-foreground: 40 35% 90%;
+    --sidebar-border: 140 20% 26%;
+    --sidebar-ring: 140 35% 60%;
   }
 
   .dark {
