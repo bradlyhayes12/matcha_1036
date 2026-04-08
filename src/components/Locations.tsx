@@ -13,7 +13,7 @@ const locations = [
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-24 text-foreground" style={{ backgroundColor: '#3d5a4f' }}>
+    <section id="locations" className="py-24 text-foreground" style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.6) 0%, rgb(61, 90, 79) 50%, rgba(61, 90, 79, 0.8) 100%)' }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-sm font-medium tracking-widest uppercase text-[#D4C9B8] mb-4 block">

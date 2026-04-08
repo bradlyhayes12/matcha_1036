@@ -4,7 +4,7 @@ import { IconBrandLinktree, IconBrandTiktok } from "@tabler/icons-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="py-24" style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.5) 0%, rgba(61, 90, 79, 0.2) 100%)' }}>
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center">
           <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#D4A574' }}>

@@ -40,7 +40,7 @@ const drinks = [
 
 export default function DrinksMenu() {
   return (
-      <section id="menu" className="py-24">
+      <section id="menu" className="py-24" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(61, 90, 79, 0.3) 50%, rgba(61, 90, 79, 0.6) 100%)' }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#D4A574' }}>

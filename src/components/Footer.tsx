@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="py-12 border-t border-border" style={{ backgroundColor: '#3d5a4f' }}>
+    <footer className="py-12 border-t border-border" style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.8) 0%, rgb(61, 90, 79) 100%)' }}>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="font-display text-xl font-semibold">
