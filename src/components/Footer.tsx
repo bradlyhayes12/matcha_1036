@@ -1,21 +1,21 @@
 const Footer = () => {
   return (
-    <footer className="py-12 bg-secondary/50 border-t border-border">
+    <footer className="py-12 border-t border-border" style={{ backgroundColor: '#3d5a4f' }}>
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="font-display text-xl font-semibold text-foreground">
-           <a href="#hero" className="hover:text-primary transition-colors">
-             <span className="text-primary">Matcha 10:36</span>
+          <div className="font-display text-xl font-semibold">
+           <a href="#hero" className="hover:opacity-80 transition-opacity">
+             <span style={{ color: '#E8D5C4' }}>Matcha 10:36</span>
            </a>
           </div>
-          
-          <nav className="flex gap-6 text-sm text-muted-foreground">
-            <a href="#menu" className="hover:text-foreground transition-colors">Menu</a>
-            <a href="#locations" className="hover:text-foreground transition-colors">Pop-ups</a>
-            <a href="#contact" className="hover:text-foreground transition-colors">Contact</a>
+
+          <nav className="flex gap-6 text-sm" style={{ color: '#D4C9B8' }}>
+            <a href="#menu" className="hover:text-white transition-colors">Menu</a>
+            <a href="#locations" className="hover:text-white transition-colors">Pop-ups</a>
+            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
           </nav>
-          
-          <p className="text-sm text-muted-foreground">
+
+          <p className="text-sm" style={{ color: '#D4C9B8' }}>
             Made with 🍵
           </p>
         </div>

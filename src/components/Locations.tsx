@@ -48,15 +48,15 @@ const Locations = () => {
 
               <div className="space-y-2 text-sm text-[#D4C9B8]">
                 <div className="flex items-center gap-2">
-                  <MapPin size={16} />
+                  <MapPin size={18} style={{ color: '#D4A574' }} />
                   <span>{location.address}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar size={16} />
+                  <Calendar size={18} style={{ color: '#D4A574' }} />
                   <span>{location.date}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Clock size={16} />
+                  <Clock size={18} style={{ color: '#D4A574' }} />
                   <span>{location.time}</span>
                 </div>
               </div>
