@@ -3,10 +3,10 @@ import { Button } from "./ui/button";
 
 const locations = [
   {
-    name: "Williamsburg Market",
-    address: "Bedford Ave & N 7th St",
-    date: "Every Saturday",
-    time: "9am - 3pm",
+    name: "Super Player Arcade",
+    address: "1820 Coit RD Suite 125, Plano, TX, 75075",
+    date: "This Saturday",
+    time: "12 pm - 6 pm",
     upcoming: true,
   }
 ];
