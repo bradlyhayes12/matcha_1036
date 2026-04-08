@@ -12,7 +12,7 @@ const Footer = () => {
           <nav className="flex gap-6 text-sm" style={{ color: '#D4C9B8' }}>
             <a href="#menu" className="hover:text-white transition-colors">Menu</a>
             <a href="#locations" className="hover:text-white transition-colors">Pop-ups</a>
-            <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+            <a href="https://linktr.ee/matcha1036?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnVdeKY4UO0ctcYPkaZ2nVOQfwn5txniqJj6MawX--I5KC0M8NbCP3lg6dPcY_aem_o_UJKWvqqaMqR2Qlfgn1Xw" className="hover:text-white transition-colors">Contact</a>
           </nav>
 
           <p className="text-sm" style={{ color: '#D4C9B8' }}>
