@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-6 pt-24">
         <div className="max-w-2xl mx-auto text-center">
           <span className="inline-block text-sm font-medium tracking-widest uppercase text-primary mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-           Yearn for Matcha!!
+           ~ Yearn for Matcha ~
           </span>
           
           <h1 className="font-display text-5xl md:text-7xl font-semibold text-foreground mb-6 leading-tight animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>
