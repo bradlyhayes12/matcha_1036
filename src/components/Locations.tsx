@@ -13,6 +13,7 @@ const locations = [
     name: "Claw UP",
     address: "2760 East Trinity Mills RD Apt 120, Carrollton, TX,  75006",
     date: "May 10th",
+    time: "TBD",
     upcoming: true,
   }
 ];
