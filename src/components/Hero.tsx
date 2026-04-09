@@ -22,7 +22,7 @@ export default function Hero() {
           </span>
           
           <h1 className="font-display text-5xl md:text-7xl font-semibold text-foreground mb-6 leading-tight animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>
-            Matcha 10:36
+            matcha10:36
           </h1>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
