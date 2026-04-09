@@ -63,31 +63,6 @@ const Locations = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          <button
-            size="lg"
-            className="px-8 py-4 rounded-lg font-semibold transition-colors"
-            style={{
-              backgroundColor: '#D4A574',
-              color: 'white',
-              border: '2px solid #D4A574'
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = 'rgba(212, 165, 116, 0.15)';
-              e.currentTarget.style.color = '#D4A574';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = '#D4A574';
-              e.currentTarget.style.color = 'white';
-            }}
-            onClick={() => {
-              document.getElementById("menu")?.scrollIntoView({behavior: "smooth",})
-            }}
-          >
-            View Menu
-          </button>
-        </div>
       </div>
     </section>
   );
