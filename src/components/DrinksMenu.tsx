@@ -44,7 +44,7 @@ export default function DrinksMenu() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#D4A574' }}>
-            The Menu
+            Specialty Drinks
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
             Our <span className="italic" style={{ color: '#D4A574' }}>Creations</span>
