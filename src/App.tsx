@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="min-h-screen">
-      <Header externalCartUrl={externalCartUrl} />
       <Hero />
       <DrinksMenu externalOrderUrl={externalOrderUrl} />
       <Locations />
