@@ -36,11 +36,7 @@ const Locations = () => {
           {locations.map((location, index) => (
             <div
               key={index}
-              className={`rounded-2xl p-6 transition-all duration-300 ${
-                location.upcoming
-                  ? "bg-[rgba(140,160,155,0.4)] backdrop-blur-sm hover:bg-[rgba(140,160,155,0.5)]"
-                  : "bg-[rgba(140,160,155,0.2)] opacity-70"
-              }`}
+              className="rounded-2xl p-6 transition-all duration-300 bg-[rgba(140,160,155,0.4)] backdrop-blur-sm hover:bg-[rgba(140,160,155,0.5)]"
             >
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-display text-xl font-semibold text-[#E8D5C4]">{location.name}</h3>
