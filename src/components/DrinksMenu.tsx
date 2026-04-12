@@ -4,10 +4,6 @@ import stbMatcha from '../Images/stb-matcha.jpg'
 import mangoMatcha from '../Images/mango-sticky-rice.jpg'
 import ubeMatcha from '../Images/ube.jpg'
 
-interface DrinksMenuProps {
-  externalOrderUrl: "https://matcha1036.square.site/#CDRBDPTBZEZ2VQ5PXBQATDBA";
-}
-
 const drinks = [
   {
     id: 1,
