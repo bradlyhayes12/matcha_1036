@@ -26,7 +26,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
-            Premium ceremonial-grade matcha, whisked to perfection and served at our 
+            Premium matcha, whisked to perfection and served at our 
             rotating pop-up locations across the city.
           </p>
           
