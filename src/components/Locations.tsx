@@ -7,14 +7,12 @@ const locations = [
     address: "1820 Coit RD Suite 125, Plano, TX, 75075",
     date: "This Saturday",
     time: "12 pm - 6 pm",
-    upcoming: true,
   },
   {
     name: "Claw UP",
     address: "2760 East Trinity Mills RD Apt 120, Carrollton, TX,  75006",
     date: "May 10th",
     time: "TBD",
-    upcoming: true,
   }
 ];
 
@@ -46,11 +44,6 @@ const Locations = () => {
             >
               <div className="flex items-start justify-between mb-4">
                 <h3 className="font-display text-xl font-semibold text-[#E8D5C4]">{location.name}</h3>
-                {location.upcoming && (
-                  <span className="text-xs font-medium text-[#3d5a4f] px-3 py-1 rounded-full" style={{ backgroundColor: '#D4A574' }}>
-                    Upcoming
-                  </span>
-                )}
               </div>
 
               <div className="space-y-2 text-sm text-[#D4C9B8]">
