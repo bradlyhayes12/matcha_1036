@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ShoppingCart } from 'lucide-react';
 
-interface HeaderProps {
-  externalCartUrl: string;
-}
-
 export default function Header({ externalCartUrl }: HeaderProps) {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
