@@ -6,7 +6,6 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
-  const externalCartUrl = 'https://example.com/cart';
   const externalOrderUrl = 'https://example.com/order';
 
   return (
