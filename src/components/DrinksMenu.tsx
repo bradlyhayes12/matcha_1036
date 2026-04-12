@@ -5,7 +5,7 @@ import mangoMatcha from '../Images/mango-sticky-rice.jpg'
 import ubeMatcha from '../Images/ube.jpg'
 
 interface DrinksMenuProps {
-  externalOrderUrl: string;
+  externalOrderUrl: "https://matcha1036.square.site/#CDRBDPTBZEZ2VQ5PXBQATDBA";
 }
 
 const drinks = [
