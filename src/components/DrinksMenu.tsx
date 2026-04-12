@@ -47,19 +47,16 @@ export default function DrinksMenu({ externalOrderUrl }: DrinksMenuProps) {
       <section id="menu" className="py-24" style={{ background: 'linear-gradient(to bottom, transparent 0%, rgba(61, 90, 79, 0.3) 50%, rgba(61, 90, 79, 0.6) 100%)' }}>
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#D4A574' }}>
-            Specialty Drinks
-          </span>
           <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground">
             Our <span className="italic" style={{ color: '#D4A574' }}>Creations</span>
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mb-8">
           {drinks.map((drink, index) => (
             <div
               key={index}
-              className="group bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-2 flex flex-col"
+              className="group bg-card rounded-2xl overflow-hidden shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-2"
             >
               <div className="relative aspect-square overflow-hidden">
                 <img
@@ -71,31 +68,34 @@ export default function DrinksMenu({ externalOrderUrl }: DrinksMenuProps) {
                   {drink.tag}
                 </span>
               </div>
-              <div className="p-6 flex flex-col flex-grow">
+              <div className="p-6">
                 <div className="flex justify-between items-start mb-2">
                   <h3 className="font-display text-xl font-semibold text-foreground">
                     {drink.name}
                   </h3>
                   <span className="font-semibold" style={{ color: '#D4A574' }}>{drink.price}</span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4 flex-grow">{drink.description}</p>
-                <a
-                  href={externalOrderUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center px-4 py-2 rounded-lg font-medium transition-colors duration-300"
-                  style={{
-                    backgroundColor: '#D4A574',
-                    color: '#1a1a1a'
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C9945F')}
-                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A574')}
-                >
-                  Order Here
-                </a>
+                <p className="text-sm text-muted-foreground">{drink.description}</p>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center">
+          <a
+            href={externalOrderUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-3 rounded-lg font-medium transition-colors duration-300"
+            style={{
+              backgroundColor: '#D4A574',
+              color: '#1a1a1a'
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C9945F')}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A574')}
+          >
+            Order Here
+          </a>
         </div>
       </div>
     </section>
