@@ -83,7 +83,7 @@ export default function DrinksMenu({ externalOrderUrl }: DrinksMenuProps) {
           <Button
             variant="hero"
             size="xl"
-            onClick={() => window.open(externalOrderUrl, "_blank")}
+            onClick={() => window.open("https://matcha1036.square.site/#CDRBDPTBZEZ2VQ5PXBQATDBA", "_blank")}
           >
             Order Here
           </Button>
