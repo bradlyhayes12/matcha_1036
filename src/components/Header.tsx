@@ -35,7 +35,7 @@ export default function Header({ externalCartUrl }: HeaderProps) {
     >
       <div className="container mx-auto px-6 py-4 flex justify-end">
         <a
-          href={externalCartUrl}
+          href={"https://matcha1036.square.site/#CDRBDPTBZEZ2VQ5PXBQATDBA"}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 text-[#E8D5C4] hover:text-[#D4A574] transition-colors duration-300"
