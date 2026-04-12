@@ -1,3 +1,4 @@
+import { Button } from "./ui/button";
 import regMatcha from '../Images/regmatcha.jpg'
 import stbMatcha from '../Images/stb-matcha.jpg'
 import mangoMatcha from '../Images/mango-sticky-rice.jpg'
@@ -64,9 +65,6 @@ export default function DrinksMenu({ externalOrderUrl }: DrinksMenuProps) {
                   alt={drink.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <span className="absolute top-4 left-4 text-white text-xs font-medium px-3 py-1 rounded-full" style={{ backgroundColor: '#D4A574' }}>
-                  {drink.tag}
-                </span>
               </div>
               <div className="p-6">
                 <div className="flex justify-between items-start mb-2">
@@ -82,20 +80,13 @@ export default function DrinksMenu({ externalOrderUrl }: DrinksMenuProps) {
         </div>
 
         <div className="flex justify-center">
-          <a
-            href={externalOrderUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-3 rounded-lg font-medium transition-colors duration-300"
-            style={{
-              backgroundColor: '#D4A574',
-              color: '#1a1a1a'
-            }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#C9945F')}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#D4A574')}
+          <Button
+            variant="hero"
+            size="xl"
+            onClick={() => window.open(externalOrderUrl, "_blank")}
           >
             Order Here
-          </a>
+          </Button>
         </div>
       </div>
     </section>
