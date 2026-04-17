@@ -29,12 +29,13 @@ export default function Header({ externalCartUrl }: HeaderProps) {
       }`}
       style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.95) 0%, rgba(61, 90, 79, 0.8) 100%)' }}
     >
-      <div className="container mx-auto px-6 py-4 flex justify-end">
+      <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-end">
         <a
           href={"https://matcha1036.square.site/#CDRBDPTBZEZ2VQ5PXBQATDBA"}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-[#E8D5C4] hover:text-[#D4A574] transition-colors duration-300"
+          className="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-full text-[#E8D5C4] hover:text-[#D4A574] transition-colors duration-300 active:scale-90"
+          style={{ backgroundColor: 'rgba(212, 165, 116, 0.1)' }}
         >
           <ShoppingCart size={24} />
         </a>

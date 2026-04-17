@@ -18,21 +18,21 @@ const locations = [
 
 const Locations = () => {
   return (
-    <section id="locations" className="py-24 text-foreground" style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.6) 0%, rgb(61, 90, 79) 50%, rgba(61, 90, 79, 0.8) 100%)' }}>
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <span className="text-sm font-medium tracking-widest uppercase text-[#D4C9B8] mb-4 block">
+    <section id="locations" className="py-16 sm:py-24 text-foreground" style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.6) 0%, rgb(61, 90, 79) 50%, rgba(61, 90, 79, 0.8) 100%)' }}>
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <span className="text-xs sm:text-sm font-medium tracking-widest uppercase text-[#D4C9B8] mb-3 sm:mb-4 block">
             Find Us
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-[#E8D5C4]">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-[#E8D5C4]">
             Pop-up <span className="italic">Locations</span>
           </h2>
-          <p className="mt-4 text-[#D4C9B8] max-w-lg mx-auto">
+          <p className="mt-3 sm:mt-4 text-[#D4C9B8] max-w-lg mx-auto text-sm sm:text-base px-4">
             We bring the matcha to you. Follow us on Instagram for real-time updates.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-4xl mx-auto px-4 sm:px-0">
           {locations.map((location, index) => (
             <div
               key={index}

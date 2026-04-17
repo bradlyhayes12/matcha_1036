@@ -4,33 +4,35 @@ import { IconBrandLinktree, IconBrandTiktok } from "@tabler/icons-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24" style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.5) 0%, rgba(61, 90, 79, 0.8) 100%)' }}>
-      <div className="container mx-auto px-6">
+    <section id="contact" className="py-16 sm:py-24" style={{ background: 'linear-gradient(to bottom, rgba(61, 90, 79, 0.5) 0%, rgba(61, 90, 79, 0.8) 100%)' }}>
+      <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <span className="text-sm font-medium tracking-widest uppercase mb-4 block" style={{ color: '#D4A574' }}>
+          <span className="text-xs sm:text-sm font-medium tracking-widest uppercase mb-3 sm:mb-4 block" style={{ color: '#D4A574' }}>
             Get in Touch
           </span>
-          <h2 className="font-display text-4xl md:text-5xl font-semibold text-foreground mb-6">
+          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-semibold text-foreground mb-4 sm:mb-6">
             Let's <span className="italic" style={{ color: '#D4A574' }}>Connect</span>
           </h2>
-          <p className="text-muted-foreground mb-12">
-            Interested in having us at your event, market, or space? 
+          <p className="text-sm sm:text-base text-muted-foreground mb-8 sm:mb-12 px-2">
+            Interested in having us at your event, market, or space?
             We'd love to hear from you.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="xl" className="gap-2" onClick={() => window.open("mailto:hello@matcha.1036.com", "_blank")}>
+          <div className="flex flex-col gap-3 sm:gap-4 mb-8 sm:mb-12 px-4 sm:px-0">
+            <Button variant="hero" size="lg" className="w-full sm:w-auto sm:gap-2 gap-2" onClick={() => window.open("mailto:hello@matcha.1036.com", "_blank")}>
               <Mail size={20} />
-              Email Us
+              <span className="hidden sm:inline">Email Us</span>
+              <span className="sm:hidden">Email</span>
             </Button>
-            <Button variant="heroOutline" size="xl" className="gap-2" onClick={() => window.open("https://www.instagram.com/matcha.1036/", "_blank")}>
+            <Button variant="heroOutline" size="lg" className="w-full sm:w-auto sm:gap-2 gap-2" onClick={() => window.open("https://www.instagram.com/matcha.1036/", "_blank")}>
               <Instagram size={20} />
-              Follow @matcha.1036
+              <span className="hidden sm:inline">Follow @matcha.1036</span>
+              <span className="sm:hidden">Instagram</span>
             </Button>
           </div>
 
           {/* Social Links */}
-          <div className="flex justify-center gap-6">
+          <div className="flex justify-center gap-4 sm:gap-6 px-4 sm:px-0">
             {[
               { icon: IconBrandTiktok, label: "TikTok", href: "https://www.tiktok.com/@matcha.1036" },
               { icon: MessageCircle, label: "Message", href: "https://docs.google.com/forms/d/e/1FAIpQLSe-k7hfbT0tdZ-rHRINVgXJbmRfcXm7QfQQq6ur1I7rIigsGg/viewform" },

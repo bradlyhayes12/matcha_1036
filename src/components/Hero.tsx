@@ -15,28 +15,28 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 pt-24">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 pt-16 sm:pt-24 pb-8">
         <div className="max-w-2xl mx-auto text-center">
-          <span className="inline-block text-sm font-medium tracking-widest uppercase text-primary mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <span className="inline-block text-xs sm:text-sm font-medium tracking-widest uppercase text-primary mb-3 sm:mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
            ~ Yearn for Matcha ~
           </span>
-          
-          <h1 className="font-display text-5xl md:text-7xl font-semibold text-foreground mb-6 leading-tight animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>
+
+          <h1 className="font-display text-4xl sm:text-5xl md:text-7xl font-semibold text-foreground mb-4 sm:mb-6 leading-tight animate-fade-in opacity-0" style={{ animationDelay: "0.4s" }}>
             matcha10:36
           </h1>
-          
-          <p className="text-lg text-muted-foreground mb-8 max-w-lg mx-auto animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
-            Premium matcha, whisked to perfection and served at our 
+
+          <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-lg mx-auto px-2 animate-fade-in opacity-0" style={{ animationDelay: "0.6s" }}>
+            Premium matcha, whisked to perfection and served at our
             rotating pop-up locations across the city.
           </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in opacity-0" style={{ animationDelay: "0.8s" }}>
-            <Button variant="hero" size="xl" onClick={() => {
+
+          <div className="flex flex-col gap-3 sm:gap-4 w-full sm:w-auto sm:flex-row sm:justify-center animate-fade-in opacity-0 px-4 sm:px-0" style={{ animationDelay: "0.8s" }}>
+            <Button variant="hero" size="lg" className="w-full sm:w-auto" onClick={() => {
               document.getElementById("locations")?.scrollIntoView({behavior: "smooth",})
             }}>
               View Pop-up Locations
             </Button>
-            <Button variant="heroOutline" size="xl" onClick={() => {
+            <Button variant="heroOutline" size="lg" className="w-full sm:w-auto" onClick={() => {
               document.getElementById("menu")?.scrollIntoView({behavior: "smooth",})
             }}>
               Explore Menu
