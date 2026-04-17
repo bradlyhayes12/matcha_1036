@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { ShoppingBag } from 'lucide-react';
 import regMatcha from '../Images/regmatcha.jpg'
 import stbMatcha from '../Images/stb-matcha.jpg'
 import mangoMatcha from '../Images/mango-sticky-rice.jpg'
@@ -76,14 +77,31 @@ export default function DrinksMenu({ externalOrderUrl }: DrinksMenuProps) {
         </div>
 
         <div className="flex justify-center px-4">
-          <Button
-            variant="hero"
-            size="lg"
-            className="w-full sm:w-auto"
+          <button
             onClick={() => window.open("https://matcha1036.square.site/#CDRBDPTBZEZ2VQ5PXBQATDBA", "_blank")}
+            className="group relative w-full sm:w-auto px-8 py-4 sm:px-12 sm:py-5 rounded-xl font-medium text-white transition-all duration-300 overflow-hidden"
+            style={{
+              background: 'linear-gradient(135deg, #D4A574 0%, #C18E4E 100%)',
+              boxShadow: '0 8px 24px rgba(212, 165, 116, 0.3)'
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '0 12px 36px rgba(212, 165, 116, 0.5)';
+              e.currentTarget.style.transform = 'translateY(-2px)';
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '0 8px 24px rgba(212, 165, 116, 0.3)';
+              e.currentTarget.style.transform = 'translateY(0)';
+            }}
           >
-            Order Here
-          </Button>
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style={{ background: 'linear-gradient(135deg, #E8D5C4 0%, #D4A574 100%)' }}
+            />
+            <div className="relative flex items-center justify-center gap-2 sm:gap-3">
+              <ShoppingBag size={20} className="sm:size-5" strokeWidth={2.5} />
+              <span className="text-base sm:text-lg font-semibold">Order Your Matcha</span>
+            </div>
+            <div className="absolute bottom-0 left-0 w-full h-1 bg-white/30 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+          </button>
         </div>
       </div>
     </section>
