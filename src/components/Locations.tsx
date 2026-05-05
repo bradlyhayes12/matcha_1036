@@ -3,16 +3,16 @@ import { useState } from "react";
 
 const locations = [
   {
-    name: "Super Player Arcade",
-    address: "1820 Coit RD Suite 125, Plano, TX, 75075",
-    date: "This Saturday",
-    time: "12 pm - 6 pm",
+    name: "Chicken n Pickle Allen",
+    address: "1221 Johnson Rd, Allen, TX 75013",
+    date: "May 9",
+    time: "11 pm - 4 pm",
   },
   {
     name: "Claw UP",
     address: "2760 East Trinity Mills RD Apt 120, Carrollton, TX, 75006",
     date: "May 10th",
-    time: "TBD",
+    time: "12 pm - 5 pm",
   }
 ];
 
